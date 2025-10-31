@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>リストサンプル</title>
+
+<style type="text/css">
+ul.ddmenu {
+	margin: 0;
+	padding: 0;
+	background-color: #cc0000;
+}
+
+/* 各項目（横並び） */
+ul.ddmenu li {
+	width: 125px;
+	display: inline-block;
+	list-style-type: none;
+	position: relative;
+}
+
+/* メインメニューのリンク */
+ul.ddmenu a {
+	background-color: #cc0000;
+	color: white;
+	line-height: 40px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	display: block;
+}
+
+/* ホバー時の色変更 */
+ul.ddmenu a:hover {
+	background-color: #ffdddd;
+	color: #dd0000;
+}
+
+/* サブメニュー全体を非表示に */
+ul.ddmenu ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 40px;  /* メイン項目の下に表示 */
+	left: 0;
+	background-color: #cc0000;
+	width: 125px;
+}
+
+/* サブメニューの各項目 */
+ul.ddmenu ul li {
+	display: block;
+}
+
+/* 親にマウスを乗せたらサブメニューを表示 */
+ul.ddmenu li:hover ul {
+	display: block;
+}
+</style>
+</head>
+
+<body>
+<ul class="ddmenu">
+   <li><a href="#">HOME</a></li>
+   <li><a href="#">ニュース</a>
+      <ul>
+         <li><a href="#">新製品</a></li>
+         <li><a href="#">新サービス</a></li>
+         <li><a href="#">弊社について</a></li>
+      </ul>
+   </li>
+   <li><a href="#">製品・技術</a>
+      <ul>
+         <li><a href="#">ハードウェア</a></li>
+         <li><a href="#">ソフトウェア</a></li>
+         <li><a href="#">ウェブサービス</a></li>
+      </ul>
+   </li>
+   <li><a href="#">会社情報</a>
+      <ul>
+         <li><a href="#">会社概要</a></li>
+         <li><a href="#">社長挨拶</a></li>
+         <li><a href="#">沿革</a></li>
+         <li><a href="#">所在地</a></li>
+      </ul>
+   </li>
+   <li><a href="#">お問い合わせ</a>
+      <ul>
+         <li><a href="#">よくあるご質問</a></li>
+         <li><a href="#">お問い合わせ先</a></li>
+      </ul>
+   </li>
+</ul>
+</body>
+</html>
